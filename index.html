@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">    
+    <script src="./jquery-3.2.1.min.js"></script>
+</head>
+<style>
+    li{list-style: none;}
+    .btn-primary{
+        display:flex;
+        flex-direction: column;
+        color:white;
+        font-size:22px;
+        width:150px;
+        background-color: #353535;
+        position: relative;
+    }
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+        border-style:none;
+        background-color: #233858;
+     }
+    .submenu{
+        display:flex;
+        flex-direction: column;
+        position:absolute;   
+        top:0;
+        left:80%;
+        width:150px;
+        display: none;    
+    }
+    .btn{
+        margin-bottom:10px;
+        height:36px;
+        background-color:#233858;   
+    }
+
+    @media screen and (min-width: 350px) and (max-width: 768px){
+
+
+    }    
+</style>
+<script>
+ $(function(){
+     $('.btn-primary ').click(function(){
+            $('ul').hide('fast');     
+            $('ul',this).show('fast');
+     });
+ });
+</script>
+<body>
+       <div class="container">
+        <button class='btn-primary'>menu 1
+            <ul class="submenu">
+								<li class="btn">menu 1-01</li>
+								<li class="btn">menu 1-02</li>
+								<li class="btn">menu 1-03</li>
+								<li class="btn">menu 1-04</li>
+								<li class="btn">menu 1-05</li>
+								<li class="btn">menu 1-06</li>
+								<li class="btn">menu 1-07</li>
+								<li class="btn">menu 1-08</li>
+								<li class="btn">menu 1-09</li>
+								<li class="btn">menu 1-10</li>
+								<li class="btn">menu 1-11</li>
+								<li class="btn">menu 1-12</li>
+								<li class="btn">menu 1-13</li>
+								<li class="btn">menu 1-14</li>
+								<li class="btn">menu 1-15</li>
+								<li class="btn">menu 1-16</li>
+								<li class="btn">menu 1-17</li>
+								<li class="btn">menu 1-18</li>
+								<li class="btn">menu 1-19</li>
+								<li class="btn">menu 1-20</li>
+            </ul>
+        </button>
+        <button class='btn-primary'>menu 2
+            <ul class="submenu">
+								<li class="btn">menu 2-01</li>
+								<li class="btn">menu 2-02</li>
+								<li class="btn">menu 2-03</li>
+								<li class="btn">menu 2-04</li>
+								<li class="btn">menu 2-05</li>
+								<li class="btn">menu 2-06</li>
+								<li class="btn">menu 2-07</li>
+								<li class="btn">menu 2-08</li>
+								<li class="btn">menu 2-09</li>
+								<li class="btn">menu 2-10</li>
+								<li class="btn">menu 2-11</li>
+								<li class="btn">menu 2-12</li>
+								<li class="btn">menu 2-13</li>
+								<li class="btn">menu 2-14</li>
+								<li class="btn">menu 2-15</li>
+								<li class="btn">menu 2-16</li>
+								<li class="btn">menu 2-17</li>
+								<li class="btn">menu 2-18</li>
+								<li class="btn">menu 2-19</li>
+								<li class="btn">menu 2-20</li>
+            </ul>
+        </button>
+        <button class='btn-primary'>menu 3
+            <ul class="submenu">
+								<li class="btn">menu 3-01</li>
+								<li class="btn">menu 3-02</li>
+								<li class="btn">menu 3-03</li>
+								<li class="btn">menu 3-04</li>
+								<li class="btn">menu 3-05</li>
+								<li class="btn">menu 3-06</li>
+								<li class="btn">menu 3-07</li>
+								<li class="btn">menu 3-08</li>
+								<li class="btn">menu 3-09</li>
+								<li class="btn">menu 3-10</li>
+								<li class="btn">menu 3-11</li>
+								<li class="btn">menu 3-12</li>
+								<li class="btn">menu 3-13</li>
+								<li class="btn">menu 3-14</li>
+								<li class="btn">menu 3-15</li>
+								<li class="btn">menu 3-16</li>
+								<li class="btn">menu 3-17</li>
+								<li class="btn">menu 3-18</li>
+								<li class="btn">menu 3-19</li>
+								<li class="btn">menu 3-20</li>		
+            </ul>
+        </button>                 
+    </div>   
+</body>
+</html>
